@@ -14,6 +14,8 @@
 		C907F9C726D16C110055B3FD /* HotelBillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F9C626D16C110055B3FD /* HotelBillTests.swift */; };
 		C907F9D126D16C110055B3FD /* HotelBillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F9D026D16C110055B3FD /* HotelBillUITests.swift */; };
 		C907F9D326D16C110055B3FD /* HotelBillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F9D226D16C110055B3FD /* HotelBillUITestsLaunchTests.swift */; };
+		C907FA1D26D17DDA0055B3FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */; };
+		C907FA1E26D17DDA0055B3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		C907F9CC26D16C110055B3FD /* HotelBillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelBillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C907F9D026D16C110055B3FD /* HotelBillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelBillUITests.swift; sourceTree = "<group>"; };
 		C907F9D226D16C110055B3FD /* HotelBillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelBillUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C907FA1F26D17F090055B3FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,11 @@
 		C907F9B426D16C0E0055B3FD /* HotelBill */ = {
 			isa = PBXGroup;
 			children = (
+				C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */,
+				C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */,
 				C907F9B526D16C0E0055B3FD /* HotelBillApp.swift */,
 				C907F9B726D16C0E0055B3FD /* ContentView.swift */,
+				C907FA1F26D17F090055B3FD /* Info.plist */,
 				C907F9B926D16C100055B3FD /* Assets.xcassets */,
 				C907F9BB26D16C100055B3FD /* Preview Content */,
 			);
@@ -257,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C907FA1E26D17DDA0055B3FD /* AppDelegate.swift in Sources */,
 				C907F9B826D16C0E0055B3FD /* ContentView.swift in Sources */,
 				C907F9B626D16C0E0055B3FD /* HotelBillApp.swift in Sources */,
+				C907FA1D26D17DDA0055B3FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,12 +431,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HotelBill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotelBill/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,12 +461,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HotelBill/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotelBill/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

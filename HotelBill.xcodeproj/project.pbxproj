@@ -17,6 +17,7 @@
 		C907FA1D26D17DDA0055B3FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */; };
 		C907FA1E26D17DDA0055B3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */; };
 		C907FA2326D1DD3C0055B3FD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = C907FA2226D1DD3C0055B3FD /* Introspect */; };
+		C979E6BE26D282BE004FB0A9 /* WelcomeNavigationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979E6BD26D282BE004FB0A9 /* WelcomeNavigationFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C907FA1F26D17F090055B3FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C979E6BD26D282BE004FB0A9 /* WelcomeNavigationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigationFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				C907FA1F26D17F090055B3FD /* Info.plist */,
 				C907F9B926D16C100055B3FD /* Assets.xcassets */,
 				C907F9BB26D16C100055B3FD /* Preview Content */,
+				C979E6BD26D282BE004FB0A9 /* WelcomeNavigationFormView.swift */,
 			);
 			path = HotelBill;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				C907FA1E26D17DDA0055B3FD /* AppDelegate.swift in Sources */,
 				C907F9B826D16C0E0055B3FD /* ContentView.swift in Sources */,
+				C979E6BE26D282BE004FB0A9 /* WelcomeNavigationFormView.swift in Sources */,
 				C907F9B626D16C0E0055B3FD /* HotelBillApp.swift in Sources */,
 				C907FA1D26D17DDA0055B3FD /* SceneDelegate.swift in Sources */,
 			);

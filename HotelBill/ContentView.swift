@@ -10,7 +10,7 @@ import Introspect
 
 struct ContentView: View {
     var body: some View {
-        WelcomeNavigationFormView()
+        BillSplitView()
     }
 }
 

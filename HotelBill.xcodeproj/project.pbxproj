@@ -16,6 +16,7 @@
 		C907F9D326D16C110055B3FD /* HotelBillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907F9D226D16C110055B3FD /* HotelBillUITestsLaunchTests.swift */; };
 		C907FA1D26D17DDA0055B3FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1B26D17DDA0055B3FD /* SceneDelegate.swift */; };
 		C907FA1E26D17DDA0055B3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA1C26D17DDA0055B3FD /* AppDelegate.swift */; };
+		C907FA2326D1DD3C0055B3FD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = C907FA2226D1DD3C0055B3FD /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C907FA2326D1DD3C0055B3FD /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = HotelBill;
+			packageProductDependencies = (
+				C907FA2226D1DD3C0055B3FD /* Introspect */,
+			);
 			productName = HotelBill;
 			productReference = C907F9B226D16C0E0055B3FD /* HotelBill.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = C907F9A926D16C0E0055B3FD;
+			packageReferences = (
+				C907FA2126D1DD3C0055B3FD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = C907F9B326D16C0E0055B3FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -613,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C907FA2126D1DD3C0055B3FD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C907FA2226D1DD3C0055B3FD /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C907FA2126D1DD3C0055B3FD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C907F9AA26D16C0E0055B3FD /* Project object */;
 }

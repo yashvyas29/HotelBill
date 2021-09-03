@@ -29,13 +29,16 @@ struct BillSplitView: View {
         return grandTotal
     }
 
+    var amountTextField: some View {
+        TextField("Amount", text: $checkAmount)
+    }
+
     var body: some View {
         // WelcomeNavigationFormView()
         NavigationView {
             Form {
                 Section {
-                    TextField("Amount", text: $checkAmount)
-                        .keyboardType(.decimalPad)
+                    amountTextField
                     Picker("Number of people", selection: $numberOfPeople) {
                         ForEach(2 ..< 100) {
                             Text("\($0) people")
@@ -53,6 +56,7 @@ struct BillSplitView: View {
                 // .modifier(SectionHeaderStyle())
                 Section(header: Text("Amount per person")) {
                     Text("$\(amountPerPerson, specifier: "%.2f")")
+                        .largeBlueStyle()
                 }
                 Section(header: Text("Total amount")) {
                     Text("$\(totalAmount, specifier: "%.2f")")
@@ -73,5 +77,17 @@ struct BillSplitView: View {
                 }
             }
         }
+    }
+}
+
+private struct LargeBlueStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content.font(.largeTitle).foregroundColor(.blue)
+    }
+}
+
+private extension View {
+    func largeBlueStyle() -> some View {
+        self.modifier(LargeBlueStyle())
     }
 }

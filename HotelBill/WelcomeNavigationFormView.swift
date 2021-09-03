@@ -108,6 +108,7 @@ private struct GenderPickerView: View {
                 Text("\(items[$0])")
             }
         }
+        .labelsHidden()
         // MenuPickerStyle, InlinePickerStyle is available from iOS 14.0
         .pickerStyle(SegmentedPickerStyle())
     }
